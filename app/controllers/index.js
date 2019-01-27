@@ -29,12 +29,16 @@ export default Controller.extend({
     actions:{
         saveInvitation(){
             const email = this.get('emailAddress');
-            const newInvitation = this.store.createRecord('invitation', {email: email});
-            newInvitation.save();
+            const newInvitation = this.store.createRecord('invitation', {email});
+            newInvitation.save().then(response =>{
+                this.set('responseMessage', `Thank You! We have just saved your email address: ${this.get('emailAddress')}`);
+                this.set('emailAddress', '');
+                console.log("EMail Address saved");
+
+
+            });
 
             // alert(`Saving of the following email address is in Progress: ${this.get('emailAddress')}`);
-            this.set('responseMessage', `Thank You! We have just saved your email address: ${this.get('emailAddress')}`);
-            this.set('emailAddress', '');
         }
     }
 

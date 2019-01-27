@@ -7,7 +7,8 @@ module.exports = function(environment) {
       rootURL: "/",
       locationType: "auto",
   
-      firebase: {
+
+   firebase: {
         apiKey: "#My_API_Key",
         authDomain: "#My_Domain",
         databaseURL: "#My_Database",
@@ -15,7 +16,6 @@ module.exports = function(environment) {
         storageBucket: "#Storage",
         messagingSenderId: "#senderID"
       },
-  
       // if using ember-cli-content-security-policy
       contentSecurityPolicy: {
         'script-src': "'self' 'unsafe-eval' apis.google.com",
