@@ -8,12 +8,12 @@ module.exports = function(environment) {
       locationType: "auto",
   
       firebase: {
-        apiKey: "AIzaSyDgnnDEDAFdi7dKtu9y4IhlR2FMd9hyFYo",
-        authDomain: "myapp-1523725346458.firebaseapp.com",
-        databaseURL: "https://myapp-1523725346458.firebaseio.com",
-        projectId: "myapp-1523725346458",
-        storageBucket: "myapp-1523725346458.appspot.comm",
-        messagingSenderId: "428963497844"
+        apiKey: "#My_API_Key",
+        authDomain: "#My_Domain",
+        databaseURL: "#My_Database",
+        projectId: "My_ProjectID",
+        storageBucket: "#Storage",
+        messagingSenderId: "#senderID"
       },
   
       // if using ember-cli-content-security-policy
