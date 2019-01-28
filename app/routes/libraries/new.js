@@ -9,8 +9,8 @@ export default Route.extend({
   actions: {
 
     saveLibrary(newLibrary) {
-      newLibrary.save().then(() => this.transitionTo('libraries'));
-      
+        // console.log(newLibrary);
+              newLibrary.save().then(() => this.transitionTo('libraries'));
     },
 
     willTransition() {

@@ -13,7 +13,6 @@ export default Controller.extend({
   isValid: match('emailAddress', /^.+@.+\..+$/),
   isDisabled: not('isValid'),
 
-
 //   actualEmailAddress: computed('emailAddress', function(){
 //     console.log('actualEmailAddress function is called ', this.get('emailAddress'));
 //   }),
@@ -25,7 +24,6 @@ export default Controller.extend({
 //   isDisabled: not('isValid')
 // isDisabled: empty('emailAddress')
 
-
     actions:{
         saveInvitation(){
             const email = this.get('emailAddress');
@@ -34,7 +32,6 @@ export default Controller.extend({
                 this.set('responseMessage', `Thank You! We have just saved your email address: ${this.get('emailAddress')}`);
                 this.set('emailAddress', '');
                 console.log("EMail Address saved");
-
 
             });
 

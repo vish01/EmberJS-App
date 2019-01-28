@@ -7,7 +7,7 @@ module.exports = function(environment) {
       rootURL: "/",
       locationType: "auto",
   
-
+    
    firebase: {
         apiKey: "#My_API_Key",
         authDomain: "#My_Domain",
